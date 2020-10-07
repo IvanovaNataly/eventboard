@@ -1,0 +1,37 @@
+// Custom system
+@import 'custom';
+
+//Icons
+// @import 'icons';
+
+//Icons
+// @import 'modals';
+
+// Roboto font
+@import 'fonts';
+
+html,
+body,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: $font-family-main;
+  letter-spacing: $letter-spacing-30;
+  line-height: 1;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.displayed-none {
+  display: none !important;
+}
+
+.sr-only {
+  font-size: 0;
+}
