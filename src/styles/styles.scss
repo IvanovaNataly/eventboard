@@ -14,18 +14,54 @@ html,
 body,
 footer,
 header {
+  font-size: $base-font-size;
+  font-family: $font-family-main;
+  letter-spacing: $letter-spacing-30;
+  line-height: 1;
   margin: 0;
   padding: 0;
   border: 0;
 }
 body {
-  font-family: $font-family-main;
-  letter-spacing: $letter-spacing-30;
-  line-height: 1;
+  width: 100vw;
+  height: 100vh;
 }
 
 *, *:after, *:before {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: unset;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .displayed-none {

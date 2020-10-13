@@ -1,19 +1,25 @@
 $font-family-main: Roboto, "Helvetica Neue", Arial, sans-serif;
 
-$large-font-size: 25px;
-$main-font-size: 16px;
-$small-font-size: 14px;
+$base-font-size: 10px;
+$large-font-size: 2.5em;
+$main-font-size: 1.6em;
+$small-font-size: 1em;
 $letter-spacing-30: 0.3px;
-$letter-spacing-25: 0.25px;
-$letter-spacing-12: 0.12px;
+//$letter-spacing-25: 0.25px;
+//$letter-spacing-12: 0.12px;
 
 $grid-gap: 0.8em;
-$mobile-gap: 8px;
-$card-width: 327px;
-$card-height: 344px;
-$card-padding: 24px;
-$card-icon-size: 24px;
-$card-icon-size-mobile: 48px;
-$card-icon-wrapper: $card-icon-size + $card-padding * 1.5;
-$top-icon-size: 40px;
-$card-line-height: 43px;
+$grid-line-height: 7em;
+
+
+
+
+//$mobile-gap: 8px;
+//$card-width: 327px;
+//$card-height: 344px;
+//$card-padding: 24px;
+//$card-icon-size: 24px;
+//$card-icon-size-mobile: 48px;
+//$card-icon-wrapper: $card-icon-size + $card-padding * 1.5;
+//$top-icon-size: 40px;
+//$card-line-height: 43px;
