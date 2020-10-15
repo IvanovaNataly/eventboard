@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     this.dataService.getData().subscribe( resp => {
       if (resp) {
         this.theList = this.composeTheList(resp);
+        this.defineWeeks();
         console.log(this.theList);
       }
     });
@@ -38,16 +39,26 @@ export class HomeComponent implements OnInit {
       isActive: false
     };
     for (let i = firstWeekDay - 1; i > 0; i--) {
-      data.unshift(emptyItem);
+      data.unshift(JSON.parse(JSON.stringify(emptyItem)));
     }
     const remainder = data.length % 7;
-
     if (remainder !== 0) {
       for (let i = 0; i < 7 - remainder; i++) {
-        data.push(emptyItem);
+        data.push(JSON.parse(JSON.stringify(emptyItem)));
       }
     }
     return data;
+  }
+
+  defineWeeks(): void {
+    let counter = 1;
+    for (let i = 0; i <= this.theList.length - 1; i++) {
+      this.theList[i].weekIndex = counter;
+      const index = (i + 1) % 7 ;
+      if ( index === 0) {
+        counter++;
+      }
+    }
   }
 
 }

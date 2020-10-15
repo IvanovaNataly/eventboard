@@ -12,4 +12,7 @@ export interface IItem {
   description?: string;
   date?: IDate;
   tags?: Array<number>;
+  multiple?: Array<IItem>;
+  weekIndex?: number;
+  place?: string;
 }

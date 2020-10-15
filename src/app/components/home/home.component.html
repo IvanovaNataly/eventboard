@@ -6,6 +6,7 @@
     <div class="item" *ngFor="let item of theList">
       <span class="item-date" *ngIf="item.date">{{ item.date.day }}</span>
       <h2 class="item-title">{{ item.name }}</h2>
+      {{ item.weekIndex }}
     </div>
     <!--<div class="item">item-1</div>-->
     <!--<div class="item">item-2</div>-->
