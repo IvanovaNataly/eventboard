@@ -2,42 +2,12 @@
   <div class="wrapper-background"></div>
   <h1 class="page-title">Ноябрь 2020</h1>
 
-  <section class="container">
+  <section class="container" [style.gridAutoRows]="rowsHeight.join(' ')">
     <div class="item" *ngFor="let item of theList">
       <span class="item-date" *ngIf="item.date">{{ item.date.day }}</span>
       <h2 class="item-title">{{ item.name }}</h2>
       {{ item.weekIndex }}
     </div>
-    <!--<div class="item">item-1</div>-->
-    <!--<div class="item">item-2</div>-->
-    <!--<div class="item">item-3</div>-->
-    <!--<div class="item">item-4</div>-->
-    <!--<div class="item">item-5</div>-->
-    <!--<div class="item weekend">item-6</div>-->
-    <!--<div class="item weekend">item-7</div>-->
-
-    <!--<div class="item filled">item-1</div>-->
-    <!--<div class="item filled">item-2</div>-->
-    <!--<div class="item filled double">item-3</div>-->
-    <!--<div class="item filled">item-4</div>-->
-    <!--<div class="item filled">item-5</div>-->
-    <!--<div class="item weekend">item-6</div>-->
-    <!--<div class="item weekend">item-7</div>-->
-
-    <!--<div class="item filled">item-1</div>-->
-    <!--<div class="item filled">item-2</div>-->
-    <!--<div class="item filled">item-3</div>-->
-    <!--<div class="item filled">item-4</div>-->
-    <!--<div class="item filled">item-5</div>-->
-    <!--<div class="item weekend">item-6</div>-->
-    <!--<div class="item weekend">item-7</div>-->
-
-    <!--<div class="item">item-1</div>-->
-    <!--<div class="item">item-2</div>-->
-    <!--<div class="item">item-3</div>-->
-    <!--<div class="item">item-4</div>-->
-    <!--<div class="item">item-5</div>-->
-    <!--<div class="item weekend">item-6</div>-->
-    <!--<div class="item weekend">item-7</div>-->
   </section>
+
 </div>

@@ -13,11 +13,16 @@ export class HomeComponent implements OnInit {
   // public theList$: Observable<any[]>;
 
   public theList: Array<IItem>;
+  public inactiveRowHeight: number;
+  public rowsHeight: Array<string>;
+  public errorMessageColor = 'red';
 
   constructor( private dataService: DataService ) { }
 
   ngOnInit() {
     this.getList();
+    this.inactiveRowHeight = 7;
+    this.rowsHeight = [];
   }
 
   getList() {
@@ -28,6 +33,7 @@ export class HomeComponent implements OnInit {
       if (resp) {
         this.theList = this.composeTheList(resp);
         this.defineWeeks();
+        this.defineRowsHeight();
         console.log(this.theList);
       }
     });
@@ -61,4 +67,18 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  defineRowsHeight(): void {
+    const inactiveRowHeight = this.inactiveRowHeight + 'em';
+    const activeRowHeight = this.inactiveRowHeight * 2 + 'em';
+    this.theList.forEach( item =>  {
+      const index = item.weekIndex - 1;
+      if (!item.isActive && this.rowsHeight[index] !== activeRowHeight) {
+        this.rowsHeight[index] = inactiveRowHeight;
+      }
+      else {
+        this.rowsHeight[index] = activeRowHeight;
+      }
+    });
+    console.log(this.rowsHeight);
+  }
 }

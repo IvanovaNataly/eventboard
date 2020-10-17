@@ -14,5 +14,5 @@ export interface IItem {
   tags?: Array<number>;
   multiple?: Array<IItem>;
   weekIndex?: number;
-  place?: string;
+  class?: string;
 }
