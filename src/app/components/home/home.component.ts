@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs/index';
-import { IItem, IDate } from '../../models/index';
+import { IItem } from '../../models/index';
 
 @Component({
   selector: 'app-home.component',
@@ -11,11 +11,9 @@ import { IItem, IDate } from '../../models/index';
 export class HomeComponent implements OnInit {
 
   // public theList$: Observable<any[]>;
-
   public theList: Array<IItem>;
   public inactiveRowHeight: number;
   public rowsHeight: Array<string>;
-  public errorMessageColor = 'red';
 
   constructor( private dataService: DataService ) { }
 
@@ -79,6 +77,5 @@ export class HomeComponent implements OnInit {
         this.rowsHeight[index] = activeRowHeight;
       }
     });
-    console.log(this.rowsHeight);
   }
 }

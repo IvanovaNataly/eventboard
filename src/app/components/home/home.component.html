@@ -3,11 +3,9 @@
   <h1 class="page-title">Ноябрь 2020</h1>
 
   <section class="container" [style.gridAutoRows]="rowsHeight.join(' ')">
-    <div class="item" *ngFor="let item of theList">
-      <span class="item-date" *ngIf="item.date">{{ item.date.day }}</span>
-      <h2 class="item-title">{{ item.name }}</h2>
-      {{ item.weekIndex }}
-    </div>
+    <ng-container *ngFor="let item of theList">
+      <app-card [item]="item"></app-card>
+    </ng-container>
   </section>
 
 </div>

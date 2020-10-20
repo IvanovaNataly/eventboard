@@ -1,0 +1,19 @@
+@import '../../../styles/custom.scss';
+
+:host {
+  display: contents;
+}
+
+.item {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+
+  &.filled {
+
+  }
+
+  &-title {
+    font-size: $main-font-size;
+  }
+}

@@ -46,12 +46,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "isActive": true,
@@ -76,12 +76,12 @@
           "month": 11,
           "year": 2020
         },
-        "tags": [
-          1,
-          2,
-          3,
-          4
-        ]
+        "tags": {
+          "pc": true,
+          "ps4": true,
+          "xbox": true,
+          "switch": true
+        }
       },
       {
         "_id": "5f84731a3487c0860eeb8c43",
@@ -98,12 +98,12 @@
           "month": 11,
           "year": 2020
         },
-        "tags": [
-          1,
-          2,
-          3,
-          4
-        ]
+        "tags": {
+          "pc": true,
+          "ps4": true,
+          "xbox": true,
+          "switch": true
+        }
       }
     ]
   },
@@ -122,12 +122,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": false
+    }
   },
   {
     "_id": "5f84731a0ffb7421571198cd",
@@ -144,12 +144,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": false,
+      "switch": false
+    }
   },
   {
     "_id": "5f84731a662ea1f3a8128800",
@@ -166,12 +166,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": false,
+      "xbox": false,
+      "switch": false
+    }
   },
   {
     "isActive": false,
@@ -204,12 +204,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731a2720f04ccaa44eee",
@@ -226,12 +226,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731af3e7ebd583f4055b",
@@ -248,12 +248,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731a2b8058d72a2d3aca",
@@ -270,12 +270,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731ae56c175ff7fd93fa",
@@ -292,12 +292,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "isActive": false,
@@ -330,12 +330,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731af60efac5917daf55",
@@ -352,12 +352,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731a28a298ea08e05ac8",
@@ -374,12 +374,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731a9f5351b43e630ef4",
@@ -396,12 +396,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731ae02dc73f421b30c5",
@@ -418,12 +418,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "isActive": false,
@@ -456,12 +456,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731a6b8c36d61ab36ef5",
@@ -478,12 +478,12 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   },
   {
     "_id": "5f84731ae191efd5bff0b5d2",
@@ -500,11 +500,11 @@
       "month": 11,
       "year": 2020
     },
-    "tags": [
-      1,
-      2,
-      3,
-      4
-    ]
+    "tags": {
+      "pc": true,
+      "ps4": true,
+      "xbox": true,
+      "switch": true
+    }
   }
 ]

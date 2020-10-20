@@ -1,4 +1,5 @@
 import { IDate } from './date.interface';
+import { ITags } from './tags.interface';
 
 export interface IItem {
   _id?: string;
@@ -11,7 +12,7 @@ export interface IItem {
   link?: string;
   description?: string;
   date?: IDate;
-  tags?: Array<number>;
+  tags?: ITags;
   multiple?: Array<IItem>;
   weekIndex?: number;
   class?: string;
