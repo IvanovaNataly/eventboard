@@ -2,7 +2,7 @@ $white: #ffffff;
 $black: #000000;
 
 //system colors
-$system-primary: #0076c0;
+$system-primary: rgba(84, 54, 44);
 $system-accent: #00acc1;
 $system-warn: #c82929;
 $system-notification: #da7f0e;
@@ -12,6 +12,7 @@ $error-text: #b00020;
 $error-bg: rgba(239, 106, 110, 0.15);
 
 //layout colors
+$main-background: rgba(84, 54, 44, 0.8);
 $main-color-light: #8c8c8c;
 $main-color-middle: #666666;
 $main-color-dark: #000000;

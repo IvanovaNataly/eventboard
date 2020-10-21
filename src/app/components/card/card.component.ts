@@ -11,9 +11,13 @@ export class CardComponent implements OnInit {
   @Input()
   public item: IItem;
 
+  @Input()
+  public isMultiple: boolean;
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

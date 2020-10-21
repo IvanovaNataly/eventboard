@@ -5,12 +5,35 @@
 }
 
 .item {
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: $base-font-size;
+  font-size: $main-font-size;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  position: relative;
 
-  &.filled {
+  &.multiple {
+    padding: 0;
+    background-color: transparent;
+    flex-basis: 50%;
+  }
 
+  &-date {
+    display: block;
+    text-align: center;
+    font-size: $small-font-size;
+    font-weight: 600;
+    color: $system-primary;
+    width: $small-font-size * 2;
+    height: $small-font-size * 2;
+    line-height: $small-font-size * 2;
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    top: $base-font-size / 3 * 2;
+    left: $base-font-size / 3 * 2;
   }
 
   &-title {

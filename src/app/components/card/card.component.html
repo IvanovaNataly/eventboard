@@ -1,5 +1,15 @@
-<div class="item">
-  <span class="item-date" *ngIf="item.date">{{ item.date.day }}</span>
-  <h2 class="item-title">{{ item.name }}</h2>
-  <app-tag *ngFor="let tag of item.tags | keyvalue" [tagName]="tag.key"></app-tag>
+<div class="item" [class.multiple]="isMultiple">
+  <span class="item-date" *ngIf="item.date && !isMultiple">{{ item.date.day }}</span>
+  <ng-template [ngIf]="!item.multiple" [ngIfElse]="multiple">
+    <h2 class="item-title">{{ item.name }}</h2>
+    <div class="item-tags-container">
+      <app-tag *ngFor="let tag of item.tags | keyvalue" [tagName]="tag.key"></app-tag>
+    </div>
+  </ng-template>
+
+  <ng-template #multiple>
+    <ng-container *ngFor="let item of item.multiple">
+      <app-card [item]="item" [isMultiple]="true"></app-card>
+    </ng-container>
+  </ng-template>
 </div>

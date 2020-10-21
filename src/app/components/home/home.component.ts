@@ -66,8 +66,8 @@ export class HomeComponent implements OnInit {
   }
 
   defineRowsHeight(): void {
-    const inactiveRowHeight = this.inactiveRowHeight + 'em';
-    const activeRowHeight = this.inactiveRowHeight * 2 + 'em';
+    const inactiveRowHeight = this.inactiveRowHeight + 'rem';
+    const activeRowHeight = this.inactiveRowHeight * 2.5 + 'rem';
     this.theList.forEach( item =>  {
       const index = item.weekIndex - 1;
       if (!item.isActive && this.rowsHeight[index] !== activeRowHeight) {
