@@ -10,41 +10,43 @@
   text-transform: uppercase;
 
   &:before {
-    content: '';
-    display: inline-block;
-    width: 0.9rem;
-    height: 0.9rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    vertical-align: top;
+    font-family: $font-family-icons;
+    color: $white;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   &.pc {
     background-color: $tag-pc;
     &:before {
-      background-image: url('../../../assets/icons/tags/pc.svg');
+      content: "\e903";
     }
   }
 
   &.ps4 {
     background-color: $tag-ps4;
     &:before {
-      background-image: url('../../../assets/icons/tags/ps4.svg');
+      content: "\e900";
     }
   }
 
   &.xbox {
     background-color: $tag-xbox;
     &:before {
-      background-image: url('../../../assets/icons/tags/xbox.svg');
+      content: "\e902";
     }
   }
 
   &.switch {
     background-color: $tag-switch;
     &:before {
-      background-image: url('../../../assets/icons/tags/switch.svg');
+      content: "\e901";
     }
   }
 }
