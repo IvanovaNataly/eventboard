@@ -1,3 +1,48 @@
+@import '../../../styles/custom.scss';
+
 .tag-container {
+  display: inline-block;
+  font-size: $tiny-font-size;
+  color: $white;
+  margin-right: 5px;
+  padding: 3px 5px;
+  border-radius: 10px;
   text-transform: uppercase;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-size: contain;
+    vertical-align: top;
+  }
+
+  &.pc {
+    background-color: $tag-pc;
+    &:before {
+      background-image: url('../../../assets/icons/tags/pc.svg');
+    }
+  }
+
+  &.ps4 {
+    background-color: $tag-ps4;
+    &:before {
+      background-image: url('../../../assets/icons/tags/ps4.svg');
+    }
+  }
+
+  &.xbox {
+    background-color: $tag-xbox;
+    &:before {
+      background-image: url('../../../assets/icons/tags/xbox.svg');
+    }
+  }
+
+  &.switch {
+    background-color: $tag-switch;
+    &:before {
+      background-image: url('../../../assets/icons/tags/switch.svg');
+    }
+  }
 }
