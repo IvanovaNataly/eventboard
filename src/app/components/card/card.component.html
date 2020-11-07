@@ -1,4 +1,4 @@
-<div class="item" [class.multiple]="isMultiple">
+<div class="item" [class.multiple]="isMultiple" (click)="openModal()">
   <span class="item-date" *ngIf="item.date && !isMultiple">{{ item.date.day }}</span>
   <ng-template [ngIf]="!item.multiple" [ngIfElse]="multiple">
     <h2 class="item-title">{{ item.name }}</h2>
