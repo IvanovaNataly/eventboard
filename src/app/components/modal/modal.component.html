@@ -1,13 +1,42 @@
 <div id="modal-content-wrapper">
   <header id="modal-header">
+    <img src="{{ item.picture }}" alt="{{ item.name}} title illustration" class="modal-header-img">
     <h1 id="modal-title">{{ item.name }}</h1>
-    <div class="modal-header-summary"></div>
+    <div class="modal-summary">
+      <dl class="modal-summary-item">
+        <dt class="modal-summary-item-title">
+          release date
+        </dt>
+        <dd class="modal-summary-item-data">
+          {{ item.date.day }}/{{ item.date.month }}/{{ item.date.year }}
+        </dd>
+      </dl>
+
+
+      <dl class="modal-summary-item">
+        <dt class="modal-summary-item-title">
+          publisher
+        </dt>
+        <dd class="modal-summary-item-data">
+          {{ item.publisher }}
+        </dd>
+      </dl>
+
+      <dl class="modal-summary-item">
+        <dt class="modal-summary-item-title">
+          developer
+        </dt>
+        <dd class="modal-summary-item-data">
+          {{ item.developer }}
+        </dd>
+      </dl>
+    </div>
   </header>
   <section id="modal-body">
     <p>{{ item.description }}</p>
-    <p></p>
   </section>
   <footer id="modal-footer">
-    <button class="btn-primary" (click)="closeModal()">Close</button>
+    <a href="" class="btn-primary">Wanna try it</a>
+    <button class="btn-secondary" (click)="closeModal()">Close</button>
   </footer>
 </div>

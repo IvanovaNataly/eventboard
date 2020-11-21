@@ -8,7 +8,8 @@ export interface IItem {
   picture?: string;
   name?: string;
   type?: string; //has to be Enum
-  company?: string;
+  publisher?: string;
+  developer?: string;
   link?: string;
   description?: string;
   date?: IDate;

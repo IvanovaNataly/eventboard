@@ -16,7 +16,6 @@ export class ModalComponent implements OnInit {
               @Inject(MAT_DIALOG_DATA) public item: IItem) { }
 
   ngOnInit() {
-    console.log(this.item);
   }
 
   actionFunction() {

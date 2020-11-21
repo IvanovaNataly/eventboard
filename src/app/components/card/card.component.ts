@@ -22,6 +22,7 @@ export class CardComponent implements OnInit {
 
   openModal() {
     const dialogConfig = new MatDialogConfig();
+    dialogConfig.id = "modal-component";
     dialogConfig.data = this.item;
     const modalDialog = this.matDialog.open(ModalComponent, dialogConfig);
   }
