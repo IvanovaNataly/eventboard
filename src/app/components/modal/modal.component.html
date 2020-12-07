@@ -1,35 +1,36 @@
-<div id="modal-content-wrapper">
-  <header id="modal-header">
-    <img src="{{ item.picture }}" alt="{{ item.name}} title illustration" class="modal-header-img">
-    <h1 id="modal-title">{{ item.name }}</h1>
-    <div class="modal-summary">
-      <dl class="modal-summary-item">
-        <dt class="modal-summary-item-title">
-          release date
-        </dt>
-        <dd class="modal-summary-item-data">
-          {{ item.date.day }}/{{ item.date.month }}/{{ item.date.year }}
-        </dd>
-      </dl>
+<div class="modal-wrapper">
+  <header class="modal-header">
+    <div class="modal-img" [style.backgroundImage]="'url('+ item.picture +')'"></div>
+    <div class="modal-content">
+      <h1 class="modal-title">{{ item.name }}</h1>
+      <div class="modal-summary">
+        <dl class="modal-summary-item">
+          <dt class="modal-summary-item-title">
+            release date
+          </dt>
+          <dd class="modal-summary-item-data">
+            {{ item.date.day }}/{{ item.date.month }}/{{ item.date.year }}
+          </dd>
+        </dl>
 
+        <dl class="modal-summary-item">
+          <dt class="modal-summary-item-title">
+            publisher
+          </dt>
+          <dd class="modal-summary-item-data">
+            {{ item.publisher }}
+          </dd>
+        </dl>
 
-      <dl class="modal-summary-item">
-        <dt class="modal-summary-item-title">
-          publisher
-        </dt>
-        <dd class="modal-summary-item-data">
-          {{ item.publisher }}
-        </dd>
-      </dl>
-
-      <dl class="modal-summary-item">
-        <dt class="modal-summary-item-title">
-          developer
-        </dt>
-        <dd class="modal-summary-item-data">
-          {{ item.developer }}
-        </dd>
-      </dl>
+        <dl class="modal-summary-item">
+          <dt class="modal-summary-item-title">
+            developer
+          </dt>
+          <dd class="modal-summary-item-data">
+            {{ item.developer }}
+          </dd>
+        </dl>
+      </div>
     </div>
   </header>
   <section id="modal-body">

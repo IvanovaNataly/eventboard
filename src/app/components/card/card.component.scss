@@ -10,8 +10,8 @@
   justify-content: flex-end;
   padding: $base-font-size;
   font-size: $main-font-size;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
+  background-color: $card-background;
+  border-radius: $card-border-radius;
   overflow: hidden;
   position: relative;
 
